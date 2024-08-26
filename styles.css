@@ -1,0 +1,462 @@
+@font-face { font-family: slik; src: url('fonts/slik-extrabold.otf'); } 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+h1 {
+    font-size: 4rem;
+    margin:0;
+    font-family: "slik", serif;
+    line-height: 1em;
+}
+h2 {
+    font-size: 2rem;
+    margin:0;
+    font-family: "slik", serif;
+    line-height: 1em;
+}
+h4{
+    margin:0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 14.592px;
+    font-style: normal;
+}
+h3{
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    font-style: normal;
+    line-height: 1.3em;
+}
+p{
+    margin:0;
+    font-size:14.59px;
+}
+
+/*nav bar*/
+header {
+    background: #e59500;
+    color: #fff;
+    overflow: hidden;
+    padding: 0.5em 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Default state for top navigation buttons */
+.top-nav-button {
+    color: black; /* Black text color by default */
+    background-color: transparent; /* No background color */
+    border: none; /* Remove border */
+    padding: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+/* Hover and active state for top navigation buttons */
+.top-nav-button:hover,
+.top-nav-button:active {
+    color: black; /* White text color on hover and when active */
+    background-color: transparent; /* Black background on hover and when active */
+}
+
+
+.logo_img {
+    max-width: 120px;
+    width: 100%; /* This allows the logo to scale down responsively */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+/*Header*/
+.hero {
+    background-color: #FCA806;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    overflow: hidden;
+    padding: 4em 7em;
+}
+
+.hero-content {
+    align-items: flex-start; /* Aligns the content to the left */
+    text-align: left; /* Aligns text to the left */
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column; /* Keeps the button below the text */
+}
+
+.cta {
+    margin-top:40px;
+    border: 2px solid black;
+    color: black;
+    padding: 14px 28px;
+    font-size: 14.592px;
+    cursor: pointer;
+    text-decoration: none;
+    align-self: flex-start; /* Ensures the button stays on the left */
+}
+
+.cta:hover {
+    background-color: black;
+    color: white;
+    border-color: black; /* Optional: Change the border color to match the background */
+}
+
+
+.hero-text{
+    text-align: left;
+    width: 100%;
+}
+.hero-text h1{
+    margin-top: 0;
+}
+.hero-image {
+    width:50%;
+    align-items: center;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+
+}
+
+/*quote*/
+.quote {
+    background: black;
+    padding: 1em 7em;
+    text-align: left;
+    height: 250px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally (if needed) */
+    flex-direction: column; /* Stack content vertically */
+}
+
+.quote h4{
+    color:white;
+}
+.quote h3{
+    color: #FCA806;
+}
+
+.latest_proj{
+    background-color: #FCA806;
+}
+
+.about{
+    padding: 4em 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_details {
+    flex: 1; /* Ensures the text takes up one part of the available space */
+    text-align: left; /* Aligns text to the left */
+}
+
+.about_image {
+    flex: 1; 
+    text-align: center; 
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.about_image img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes the inline-block space below the image */
+    margin: 0 auto; /* Centers the image horizontally if necessary */
+}
+
+/*Latest Project*/
+.latest_proj{
+    padding: 4em 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.latest_proj_details{
+    width:50%;
+
+}
+.latest_proj_photo {
+    width: 50%;
+    text-align: center;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.latest_proj_photo img {
+    max-width: 600px;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the image itself is a block element */
+    margin: 0 auto;
+}
+
+.latest_proj_photo img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.latest_proj_details .cta {
+    display: block; /* Ensure each element takes up a full line */
+    width:20%;
+    text-align:center;
+}
+.proj_button {
+    display: flex; /* Displays the buttons side by side */
+    gap: 10px; /* Adds some space between the buttons */
+}
+
+.proj_button .cta {
+    flex: 1; /* Ensures both buttons take up equal space */
+    text-align: center; /* Centers the text within each button */
+    display: inline-block; /* Keeps buttons inline and properly spaced */
+    width: auto; /* Ensures the button width fits the content */
+}
+
+.latest_proj p{
+    color:#464646;
+}
+
+/*projects*/
+.project{
+    background:black;
+    color:white;
+    padding: 4em 7em;
+    
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 40px; /* Space between images */
+    margin-top: 50px; /* Space above the image grid */
+}
+
+.image-grid img {
+    width: 100%; /* Make images responsive */
+    border-radius: 15px; /* Rounds the edges of the images */
+    transition: transform 0.3s ease; /* Adds a smooth hover effect */
+}
+
+.image-grid img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
+/*contact*/
+.contact {
+    background: #FCA806;
+    display: flex;
+    padding: 4em 7em; /* Adjust padding as needed */
+    flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
+}
+.contact h2{
+    padding-bottom: 0.5em;
+}
+.contact_heading,
+.contact_form {
+    width: 50%;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    padding: 0 20px; /* Optional: Add padding for spacing */
+}
+
+.contact_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the text vertically */
+}
+
+.contact_heading p{
+    color:#464646;
+}
+.social-buttons {
+    margin-top: 20px; /* Space above the social button */
+    text-align: left; /* Align the button to the left */
+}
+
+.email-button {
+    display: inline-block;
+    background-color: transparent; /* Transparent background */
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.email-button i {
+    vertical-align: middle; /* Vertically align the icon */
+}
+
+.email-button:hover {
+    color: black; /* Darken icon color on hover */
+}
+
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the form vertically */
+}
+
+input[type=text], input[type=email], textarea {
+    background-color: transparent;
+    width: 100%;
+    padding: 12px;
+    border-left: none;
+    border-right:none;
+    border-top:none;
+    border-bottom: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color:white;
+  }
+  
+  input[type=submit] {
+    width:100%;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: black;
+    color:white;
+  }
+  input::placeholder,
+textarea::placeholder {
+    color: white; /* Changes the placeholder text color to white */
+    opacity: 1; /* Ensures the placeholder is fully visible */
+}
+
+  
+
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+    padding: 1em 7em;
+}
+
+footer p{
+    color: rgba(255,255,255,0.39);
+    font-size: 12px;
+    text-align:left;
+}
+
+
+
+/*Wrapper*/
+.wrapper{
+    background-color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 80px auto;
+    padding: 40px 40px 100px 40px;
+    position: relative;
+    width: 70%;
+}
+
+/*Sentence*/
+.sentence{
+     color: #222;
+     font-size: 57px;
+     font-weight:600;
+     text-align: center;
+}
+
+/*Vertical Flip*/
+.verticalFlip{
+	display: inline;
+}
+.verticalFlip span{
+	animation: vertical 12.5s linear infinite 0s;
+	-ms-animation: vertical 12.5s linear infinite 0s;
+	-webkit-animation: vertical 12.5s linear infinite 0s;
+	color: #126FFF;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+}
+.verticalFlip span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.verticalFlip span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.verticalFlip span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.verticalFlip span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+
+/*Vertical Flip Animation*/
+@-moz-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: rotateX(180deg); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0;}
+}
+@-webkit-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: rotateX(180deg); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes vertical{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: rotateX(180deg); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(0px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
